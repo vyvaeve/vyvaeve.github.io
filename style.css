@@ -1,0 +1,113 @@
+/**/ css reset script /**/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*random shit*/
+
+html, body {
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+}
+
+body {
+	background-image: url("materials/backgroundleft.jpg"), url("materials/backgroundright.jpg");
+	background-position: left, right;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 50% 100%, 50% 100%;
+	background-attachment: fixed;
+	background-color: #000;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	gap: 3em;
+	padding-top: 3em;
+}
+
+@font-face {
+	font-family: "ClarityCity";
+	src: url("materials/ClarityCity.ttf") format("truetype");
+}
+
+h1, h2, p {
+    font-family: "ClarityCity", Impact;
+	overflow: hidden;
+	word-wrap: break-word;
+	color: #fff;
+	padding: 0.5em;
+	z-index: -1;
+}
+
+h1, h2 {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+p {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.container {
+	background-color: rgba(0, 0, 0, 0.75);
+	border-radius: 1em;
+	width: auto;
+	height: auto;
+	max-width: 50%;
+	max-height: 50%;
+	text-align: center;
+}
+
+.spotify {
+}
